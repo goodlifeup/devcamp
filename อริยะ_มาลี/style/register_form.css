@@ -1,0 +1,26 @@
+legend {
+    background-color: #000;
+    color: #fff;
+    /**padding: 3px 6px;**/
+}
+
+ input {
+    margin: 0.6rem;
+} 
+
+  .border-center{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  span {
+    display: inline-block;
+    width: 140px;
+    text-align: Left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }

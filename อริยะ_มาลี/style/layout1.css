@@ -1,0 +1,120 @@
+/* NavBar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 11px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: rgb(5, 139, 248);
+}
+
+
+/** Article **/
+article ul {
+  list-style-type: none;
+}
+
+ul li h3 {
+  display: inline-block;
+  width: 150px;
+}
+
+ul.nobullet {
+  list-style-type: none;
+  padding-left: 0.5em;
+}
+
+ul.dotbullet {
+  list-style-type: disc;
+}
+
+.top-image {
+  display: inline-block;
+  width: 50px;
+  margin-right: 1em;
+}
+
+.new-product {
+  display: inline-block;
+  width: 90px;
+  margin-left: 1.5em;
+  margin-right: 1em;
+}
+
+.top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.thumbnail {
+  width: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article p {
+  text-indent: 2em;
+}
+
+
+
+/* div-table */
+.Image-width {
+  width: 90px;
+}
+
+.textleft {
+  padding-left: 0px;
+}
+
+.content-ex {
+  display: flex;
+  justify-content: center;
+}
+.table {
+  display: table;
+   border-style: none;
+}
+.tr {
+  display: table-row;
+}
+  /* .th {
+  float: left;
+  display: table-cell;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+background-color: #666;
+color: #FFF;
+padding:5px;
+}   */
+.td {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+padding: 12px;
+}
+

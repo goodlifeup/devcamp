@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#date').datepicker({
+        format: 'dd/mm/yyyy',
+        startDate: '01/01/1980',
+        endDate: '31/12/2005',
+        // todayBtn: 'linked',
+        // todayHighlight: true,
+        autoclose: true
+        });
+        });
+    </script>
+</head>
+<body>
+    <link rel="stylesheet" href="..\..\..\อริยะ_มาลี\style\register_form.css">
+    <div class="border-center">
+    <fieldset>
+        <legend>Register Form</legend>
+
+        <form action="https://httpbin.org/get" method="get">
+        
+        <label>
+        <span>Firstname :</span>
+        <input type="text" name="firstname" required>
+        </label>
+        <br />
+
+        <label>
+        <span>Lastname :</span>
+        <input type="text" name="lastname" required>
+        </label>
+        <br />
+
+        <label>
+        <span>Password :</span>
+        <input type="password" name="password" required>
+        </label>
+        <br />
+        
+        <label>
+        <span>Confirm Password :</span>
+        <input type="password" name="confirm-password" required>
+        </label>
+        <br />
+        
+        <label>
+        <span>Email :</span>
+        <input type="email" name="email"required>
+        </label>
+        <br />
+        
+        <label>
+        <span>Confirm Email :</span>
+        <input type="email" name="confirm-email" required>
+        </label>
+        <br />
+        
+        <!-- 
+            <label>
+        <span>Birthday :</span>
+        <input type="date" name="birthday"required>
+        </label>
+        <br /> 
+        -->
+
+        <!-- <div class="form-group"> -->
+        <label><span>Birthday :</span>
+        <input type="text" class="form-control" id="date">
+        </label>
+        <!-- </div>  -->
+        <br /> 
+
+        <label><span>Gender</span></label>
+        <input type="radio" id="male" name="Gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female">Female</label>
+        <br />
+        
+        <div class="buttons">
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+        </div>
+        </form>
+
+        
+    </fieldset>
+    </div>
+
+</body>
+</html>
