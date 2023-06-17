@@ -1,0 +1,35 @@
+ .gridcontainer {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 100%;
+} 
+
+
+@media (min-width: 768px) {
+    .test {
+      background-color: blue;
+    }
+
+    .gridcontainer {
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.item {
+    background-color: brown;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
