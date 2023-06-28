@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sarabun', sans-serif;
+    /* overflow: hidden; */
+}
+
+.bgimgline1 {
+ /* The image used */
+ background-image: url("https://img.freepik.com/free-photo/residential-district-night-valencia_1398-2378.jpg");
+
+ /* Full height */
+ width: 100%;
+ height: 100%; 
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+ 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 20px;
+    color: white;
+}
+
+
+nav ul li:last-child {
+    list-style: none;
+    margin: 0px 0px;
+}
+
+nav ul li .menubarleft {
+    width: 50px;
+}
+nav ul li .menubarright {
+    width: 30px;
+}
+
+.gridcontainer1 {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+.box_border {
+    border: 3px solid white;
+    width: 280px;
+    height: 260px;
+    align-content: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    position: relative;
+}
+
+.text1 {
+    position: absolute;
+    top:8%;
+    left: -20%;
+    color: white;
+}
+
+.text2 {
+    position: absolute;
+    top:40%;
+    left: 5%;
+    color: white;
+}
+.text2 p {
+    padding-bottom: 5px;
+}
+
+
+.manu_num {
+    display: flex;
+}
+
+.numbox:first-child {
+    margin-left: 58px;
+    
+}
+
+.numbox:last-child {
+    margin-right: auto;
+}
+
+.numbox {
+    border: 1px solid white;
+    margin-right: 3px;
+    margin-bottom: 80px;
+}
+
+.numbox p {
+    padding: 3px 8px;
+    background-color: white;
+    color: blue;
+}
+
+
+.gridcontainer2 {
+    display: grid;
+    grid-template-columns: 300px 50px 370px;
+    justify-content: center;
+}
+    
+.gridcontainer2 .imgleft img {
+    width: 100%;
+    transform: translateY(-30px);
+}
+
+.gridcontainer2 .yellowbox {
+    width: 40px;
+    height: 70px;
+    background-color: yellow;
+    margin-top: 40px;
+}
+
+.gridcontainer2 .content h2 {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.gridcontainer2 .content p {
+    font-size: 12px;
+}
+
+.gridcontainer3 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    margin-left: 95px;
+    margin-bottom: 80px;
+}
+
+.gridcontainer3 div img {
+    margin-top: 60px;
+    width: 50px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+
+.bgimgline4 {
+    /* The image used */
+    background-image: url("https://img.freepik.com/free-photo/aerial-photography-outdoor-park-views_1205-10243.jpg");
+   
+    /* Full height */
+    width: 100%;
+    height: 100%; 
+   
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgimgline4 .gridcontainer4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+
+.bgimgline4 .gridcontainer4 .right {
+    height: 1fr;
+    z-index: 2;
+    padding-left: 20px;
+}
+
+.bgimgline4 .gridcontainer4 .right h1 {
+    margin-top: 30px;
+    color: yellow;
+}
+
+.bgimgline4 .gridcontainer4 .right h3 {
+    color: yellow;
+}
+
+.bgimgline4 .gridcontainer4 .right h4,
+.bgimgline4 .gridcontainer4 .right p {
+    color: white;
+}
+
+.bgimgline4 .gridcontainer4 .right p:last-child {
+    width: 95px;
+    border: 1px solid white;
+    padding: 10px 25px;
+    margin-bottom: 40px;
+
+    
+}
+
+
+.bgimgline4 .bgtransparent {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.bgimgline5 {
+    /* The image used */
+    background-image: url("https://img.freepik.com/free-photo/smooth-blue-wooden-textured-background_53876-108424.jpg?w=996&t=st=1687854611~exp=1687855211~hmac=44c5a4d3a7e57221bb7749fe7eefadfa4516be60d62b5202b22c1696d769c9f2");
+   
+    /* Full height */
+    width: 90%;
+    height: 100%; 
+       
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimgline5 .gridcontainer5 {
+    display: grid;
+    grid-template-columns: 175px 50%;
+    margin-left: 15%;
+}
+
+
+.bgimgline5 .gridcontainer5 .leftscroll ul {
+    width: 160px;
+    height: 105px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+    overflow: auto;
+    background: transparent;
+    color: white;
+}
+
+.bgimgline5 .gridcontainer5 .leftscroll ul::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+ }
+
+ .bgimgline5 .gridcontainer5 .leftscroll ul::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: gray;
+}
+  
+.bgimgline5 .gridcontainer5 .leftscroll ul::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background-color:white;
+    /* border:2px solid #eff1f5 */
+}
+
+.bgimgline5 .gridcontainer5 .leftscroll ul::-webkit-scrollbar-thumb:hover {
+    background: skyblue; 
+}
+
+
+.bgimgline5 .gridcontainer5 .leftscroll ul li {
+    padding-top: 5px;
+}
+
+.bgimgline5 .gridcontainer5 .right {
+    margin-top: 30px;
+    
+}
+.bgimgline5 .gridcontainer5 .right p {
+    color: white;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.gridcontainer6 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    margin-left: 95px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.gridcontainer6 div .gtop img {
+    width: 190px;
+    height: 140px;
+
+}
+
+.gridcontainer6 div .gbottom {
+    width: 180px;
+    background-color: azure;
+    padding-left: 10px;
+}
+.gridcontainer6 div .gbottom h4 {
+    padding-top: 15px;
+}
+
+.gridcontainer6 div .gbottom p:last-child {
+    padding-bottom: 25px;
+}
+
+.allcard {
+    width: 300px;
+    margin: auto;
+}
+
+.allcard p {
+    font-weight: 500;
+    padding-left: 100px;
+    margin-bottom: 80px;
+}
+
+.flexcontainer7 {
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flexcontainer7 img {
+    height: 50px;
+    margin: 20px;
+}
+
+.flexcontainer8 {
+    display: grid;
+    grid-template-columns: 100px 200px 240px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image:url("https://img.freepik.com/free-vector/textured-black-background_78370-339.jpg");
+}
+
+.flexcontainer8 img {
+    width: 50px;
+    height: 55px;
+}
+
+
+.flexcontainer8 ul {
+    list-style: none;
+    color: white;
+}
+
+.flexcontainer8 ul li {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+
+

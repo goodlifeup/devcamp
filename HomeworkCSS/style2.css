@@ -1,0 +1,349 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 900px 300px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(3, 220, 86);
+}
+
+nav .bg-right {
+    background-color: rgb(3, 220, 86);
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li:first-child {
+    padding: 0px 40px;
+    background-color: white;
+}
+
+nav ul li .imgnav {
+    padding-top: 7px;
+    width: 50px;
+}
+
+.bgline1 {
+    position: relative;
+    width: 1200px;
+}
+
+.bgline1 .gridcontainer1 {
+    display: grid;
+    grid-template-columns: 900px 300px;
+    
+}
+
+.bgline1 .gridcontainer1 .grid-left {
+    height: 480px;
+}
+
+.bgline1 .gridcontainer1 .grid-left img {
+    width: 100%;
+    height: 100%
+}
+
+.bgline1 .gridcontainer1 .grid-right {
+    background-color: rgb(3, 220, 86);
+}
+
+.bgline1 .gridcontainer1 .grid-right .img-social {
+    width: 155px;
+    margin: auto;
+    margin-top: 430px;
+    
+}
+
+.bgline1 .gridcontainer1 .grid-right .img-social img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.bgline1 .plus-minus {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 45px;
+    top: 40%;
+}
+
+.bgline1 .plus-minus img {
+    margin-bottom: 20px;
+    width: 25px;
+
+}
+
+.bgline1 .floating-grid1 {
+    position: absolute;
+    top: 25%;
+    right: 110px;
+}
+
+.bgline1 .floating-grid1 .box1 {
+    display: grid;
+    grid-template-columns: 70px 350px;
+}
+
+.bgline1 .floating-grid1 .box1 .leftbox {
+    background-color: rgb(3, 220, 86);
+    opacity: 0.5;
+}
+
+.bgline1 .floating-grid1 .box1 .rightbox {
+    padding-left: 20px;
+    background-color: white;
+}
+
+.bgline1 .floating-grid1 .box1 .rightbox h3 {
+    margin-top: 50px;   
+    margin-bottom: 25px;  
+    font-size: 20px; 
+}
+
+
+.bgline1 .floating-grid1 .box1 .rightbox p {
+    font-size: 12px;
+}
+
+.bgline1 .floating-grid1 .box1 .rightbox p:last-child {
+    margin-bottom: 80px;
+}
+
+.bgline1 .floating-grid1 .box1 .btnbox p {
+    width: 95px;
+    padding: 12px 30px;
+    border: 1px solid lightgray;
+    color: white;
+    background-color: rgb(3, 220, 86);;
+    transform: translate(150px,-20px);
+}
+
+.gridcontainer2 {
+    display: grid;
+    grid-template-columns: 250px 350px 350px;
+    width: 1200px;
+    justify-content: center;
+    margin: 60px 20px;
+}
+
+.gridcontainer2 .col1 p {
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.gridcontainer2 .btnbox {
+    width: 150px;
+    background-color: rgb(3, 220, 86);
+    margin-top: 15px;
+}
+
+.gridcontainer2 .btnbox p {
+    padding: 12px 25px;
+}
+
+.gridcontainer2 .col2 img,
+.gridcontainer2 .col3 img {
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.gridcontainer2 .col2 h4, 
+.gridcontainer2 .col3 h4 {
+    text-align: center; 
+    margin: 10px 0px;
+}
+
+.gridcontainer2 .col2 p, 
+.gridcontainer2 .col3 p{
+    font-size: 12px;
+    margin: 10px 0px;
+    text-align: center; 
+}
+
+
+.bgline3 {
+    position: relative;
+    width: 1200px;
+}
+
+.bgline3 .gridcontainer3 {
+    display: grid;
+    grid-template-columns: 740px 460px;
+    
+}
+
+.bgline3 .gridcontainer3 .grid-left {
+    height: 420px;
+}
+
+.bgline3 .gridcontainer3 .grid-left img {
+    width: 100%;
+    height: 100%
+}
+
+.bgline3 .gridcontainer3 .grid-right {
+    background-color: rgb(250, 248, 248);
+}
+
+.bgline3 .floating-grid3 {
+    position: absolute;
+    top: 25%;
+    right: 110px;
+}
+
+.bgline3 .floating-grid3 .box1 {
+    display: grid;
+    grid-template-columns: 70px 350px;
+}
+
+.bgline3 .floating-grid3 .box1 .leftbox {
+    background-color: rgb(3, 220, 86);
+    opacity: 0.5;
+}
+
+.bgline3 .floating-grid3 .box1 .rightbox {
+    padding-left: 20px;
+    background-color: white;
+}
+
+.bgline3 .floating-grid3 .box1 .rightbox h3 {
+    margin-top: 30px;   
+    margin-bottom: 10px;  
+    font-size: 20px;
+    
+}
+
+.bgline3 .floating-grid3 .box1 .rightbox h4 {
+    margin-bottom: 10px;  
+    font-size: 14px;  
+    font-weight: 400;
+}
+
+
+.bgline3 .floating-grid3 .box1 .rightbox p {
+    font-size: 12px;
+}
+
+.bgline3 .floating-grid3 .box1 .rightbox p:last-child {
+    margin-bottom: 60px;
+}
+
+.bgline3 .floating-grid3 .box1 .btnbox p {
+    width: 95px;
+    padding: 12px 30px;
+    border: 1px solid lightgray;
+    color: white;
+    background-color: rgb(3, 220, 86);;
+    transform: translate(150px,-20px);
+}
+
+/* 444444 */
+.gridcontainer4 {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    width: 1200px;
+    justify-content: center;
+    margin: 60px 0px;
+}
+
+.gridcontainer4 .col1 p {
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.gridcontainer4 .btnbox {
+    width: 150px;
+    background-color: rgb(3, 220, 86);
+    margin-top: 15px;
+}
+
+.gridcontainer4 .btnbox p {
+    padding: 12px 25px;
+}
+
+.gridcontainer4 div img {
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.gridcontainer4 div h4 {
+    text-align: center; 
+    margin: 10px 0px;
+}
+
+.gridcontainer4 div p {
+    font-size: 12px;
+    margin: 10px 0px;
+    text-align: center; 
+}
+
+footer {
+    width: 1200px;
+    margin-top: 100px;
+}
+
+footer .gridcontainer5 {
+    display: grid;
+    
+    grid-template-columns: 350px 350px 350px;
+    justify-content: center;
+}
+
+/* .gridcontainer5 div {
+    margin-bottom: 20px;
+} */
+
+footer .gridcontainer5 div h3,
+footer .gridcontainer5 div p {
+    margin-bottom: 20px;
+}
+
+footer .gridcontainer5 .grid3-1 img {
+    margin-right: 10px;
+    width:25px;
+}
+
+footer .gridcontainer5 .grid3-3 {
+    display: inline-flex;
+}
+
+footer .gridcontainer5 .grid3-3 p {
+    background-color: rgb(3, 220, 86);
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+footer .gridcontainer5 .grid3-3 p:first-child {
+    width: 100px;
+    padding: 10px 30px;
+    margin-right: 15px;
+}
+
+footer .gridcontainer5 .grid3-3 p:last-child {
+    width: 30px;
+    padding: 10px 0px;
+}
+
+footer .gridcontainer5 .grid4-2 {
+    font-size: 11px;
+    margin-top: 80px;
+}
