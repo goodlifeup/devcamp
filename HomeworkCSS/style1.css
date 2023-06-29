@@ -330,7 +330,7 @@ nav ul li .menubarright {
     margin: 20px;
 }
 
-.flexcontainer8 {
+.gridcontainer8 {
     display: grid;
     grid-template-columns: 100px 200px 240px;
     justify-content: center;
@@ -339,18 +339,18 @@ nav ul li .menubarright {
     background-image:url("https://img.freepik.com/free-vector/textured-black-background_78370-339.jpg");
 }
 
-.flexcontainer8 img {
+.gridcontainer8 img {
     width: 50px;
     height: 55px;
 }
 
 
-.flexcontainer8 ul {
+.gridcontainer8 ul {
     list-style: none;
     color: white;
 }
 
-.flexcontainer8 ul li {
+.gridcontainer8 ul li {
     font-size: 14px;
     padding-bottom: 8px;
 }
