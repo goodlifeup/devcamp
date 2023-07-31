@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: 50px;
+            /* columns: 3; */
+        }
+    </style>
+</head>
+<body>
+    <div id="input-content" style="display: flex;">Hello</div>
+    <script>
+        const element = document.getElementById('input-content');
+        element.innerHTML = "";
+        const numberOfsorWor = 5;
+        for (let i = 0; i < numberOfsorWor; i++) {
+            if (i % 3 == 0)
+                element.innerHTML += "<h1 style = 'background: red'>" + i + ". No Vote</h1>";
+            else if (i % 3 == 1)
+                element.innerHTML += "<h1 style = 'background: green'>" + i + ". Vote</h1>";
+            else
+                element.innerHTML += "<h1 style = 'background: blue'>" + i + ". No Come</h1>";
+        }
+
+        //console.log(element.innerHTML);
+        //element.innerHTML ="Replace Text";
+        // element.innerHTML = "<h1 style = 'background: red'>No Vote</h1>"
+        // element.innerHTML += "<h1 style = 'background: red'>No Vote</h1>"
+        // element.innerHTML += "<h1 style = 'background: red'>No Vote</h1>"
+    </script>
+</body>
+</html>

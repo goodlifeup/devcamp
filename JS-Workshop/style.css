@@ -1,0 +1,15 @@
+#content {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+
+}
+.card {
+    background-color: tomato;
+    color :azure;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card p{
+    text-align: right;
+}

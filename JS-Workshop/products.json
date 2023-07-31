@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "ข้าวสาร",
+      "price": 400,
+      "imgURL": "https://picsum.photos/seed/201/300"
+    },
+    {
+      "id": 2,
+      "name": "น้ำปลา",
+      "price": 40,
+      "imgURL": "https://picsum.photos/seed/202/300"
+    },
+    {
+      "id": 3,
+      "name": "ปากกา",
+      "price": 10,
+      "imgURL": "https://picsum.photos/seed/203/300"
+    },
+    {
+      "id": 4,
+      "name": "ไมค์",
+      "price": 200,
+      "imgURL": "https://picsum.photos/seed/204/300"
+    },
+    {
+      "id": 5,
+      "name": "เมาส์",
+      "price": 150,
+      "imgURL": "https://picsum.photos/seed/205/300"
+    },
+    {
+      "id": 6,
+      "name": "มาม่า",
+      "price": 7,
+      "imgURL": "https://picsum.photos/seed/206/300"
+    },
+    {
+      "id": 7,
+      "name": "น้ำเปล่า",
+      "price": 10,
+      "imgURL": "https://picsum.photos/seed/207/300"
+    },
+    {
+      "id": 8,
+      "name": "ดินสอ",
+      "price": 8,
+      "imgURL": "https://picsum.photos/seed/208/300"
+    },
+    {
+      "id": 9,
+      "name": "ไข่",
+      "price": 5,
+      "imgURL": "https://picsum.photos/seed/209/300"
+    },
+    {
+      "id": 10,
+      "name": "ปลากระป๋อง",
+      "price": 22,
+      "imgURL": "https://picsum.photos/seed/210/300"
+    }
+  ]

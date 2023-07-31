@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="input-content">Starting Text</div>
+    <button id="myButton">Get Data</button>
+    <script>
+        let myButton = document.getElementById('myButton');
+        let myElement = document.getElementById('input-content');
+        let fetchProductData = function() {
+                axios.get("http://127.0.0.1:5500/devcamp/JS-Workshop/products.json").then(function(response){
+                    let arrayOfProducts = response.data;
+                    myElement.innerHTML = '';
+                    for (let i = 0; i < arrayOfProducts.length; i++) {
+                        myElement.innerHTML += "<p>" + arrayOfProducts[i].name + "</p>";
+                    }
+                    console.log(response);
+                });
+            }
+            let i = 1;
+            myButton.addEventListener("click", function(event){
+                // myElement.innerHTML += "<p>" + i + "</p>";
+                fetchProductData();
+                i++;
+            });    
+    </script>
+</body>
+</html>

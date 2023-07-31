@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input-content > div {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="input-content" style="display: flex;">Hello</div>
+    <script>
+        function getProductHTML(color, productName, price) {
+            return "<div style = 'background: " + color + "'> "+ productName + " ราคา " + price + " </div>";
+        }
+        const element = document.getElementById('input-content');
+        element.innerHTML = "";
+        const product = 5;
+        const arrayOfProduct = [
+        ['ข้าวสาร',200],
+        ['น้ำปลา',40],
+        ['ปากกา',10],
+        ['ไมค์',500],
+        ['เมาส์',150]
+    ];
+        for (let i = 0; i < product; i++) {
+            if (i % 2 == 0)
+                element.innerHTML += getProductHTML('red', arrayOfProduct[i][0], arrayOfProduct[i][1]);
+            else
+                element.innerHTML += getProductHTML('green', arrayOfProduct[i][0], arrayOfProduct[i][1]);
+        }
+
+    </script>
+</body>
+</html>
