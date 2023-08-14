@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <style>
+            table tr th {
+                border: 2px solid black;
+                text-align: center;
+                padding: 3px 10px;
+            }
+            table tr td {
+                border: 2px solid black;
+                text-align: center;
+                padding: 3px 10px;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <table class="mx-auto my-8" id="tableDisplay">
+        <tr>
+          <th>Category</th>
+          <th>cases</th>
+          <th>todayCases</th>
+          <th>deaths</th>
+          <th>todayDeaths</th>
+          <th>recovered</th>
+          <th>todayRecovered</th>
+          <th>active</th>
+          <th>critical</th>
+        </tr>
+
+      </table>
+
+      <script>
+        let covidData = {
+                          "World": {},
+                          "Thailand": {}
+                        };
+
+        function getData(callback) {
+          axios.get("https://corona.lmao.ninja/v3/covid-19/all").then(function (response) {
+            covidData.World.cases = response.data.cases
+            covidData.World.todayCases = response.data.todayCases
+            covidData.World.deaths = response.data.deaths
+            covidData.World.todayDeaths = response.data.todayDeaths
+            covidData.World.recovered = response.data.recovered
+            covidData.World.todayRecovered = response.data.todayRecovered
+            covidData.World.active = response.data.active 
+            covidData.World.critical = response.data.critical
+            callback();
+          })
+        }
+        function getData2(callback) {
+          axios.get("https://corona.lmao.ninja/v3/covid-19/countries/thailand").then(function (response) {
+            covidData.Thailand.cases = response.data.cases
+            covidData.Thailand.todayCases = response.data.todayCases
+            covidData.Thailand.deaths = response.data.deaths
+            covidData.Thailand.todayDeaths = response.data.todayDeaths
+            covidData.Thailand.recovered = response.data.recovered
+            covidData.Thailand.todayRecovered = response.data.todayRecovered
+            covidData.Thailand.active = response.data.active 
+            covidData.Thailand.critical = response.data.critical
+            callback();
+          })
+        }
+        getData(function () {
+          getData2(function () {
+            // debugger;
+            // console.log(covidData);
+
+          let tableDisplay = document.getElementById('tableDisplay');
+          let textHtml = '';
+
+          textHtml = tableDisplay.innerHTML;
+          textHtml += "<tr><td>World</td>"
+          textHtml += "<td>" + covidData.World.cases + "</td>";
+          textHtml += "<td>" + covidData.World.todayCases + "</td>";
+          textHtml += "<td>" + covidData.World.deaths + "</td>";
+          textHtml += "<td>" + covidData.World.todayDeaths + "</td>";
+          textHtml += "<td>" + covidData.World.recovered + "</td>";
+          textHtml += "<td>" + covidData.World.todayRecovered + "</td>";
+          textHtml += "<td>" + covidData.World.active + "</td>";
+          textHtml += "<td>" + covidData.World.critical + "</td>";
+          textHtml += "</tr>";
+          
+          textHtml += "<tr><td>Thailand</td>"
+          textHtml += "<td>" + covidData.Thailand.cases + "</td>";
+          textHtml += "<td>" + covidData.Thailand.todayCases + "</td>";
+          textHtml += "<td>" + covidData.Thailand.deaths + "</td>";
+          textHtml += "<td>" + covidData.Thailand.todayDeaths + "</td>";
+          textHtml += "<td>" + covidData.Thailand.recovered + "</td>";
+          textHtml += "<td>" + covidData.Thailand.todayRecovered + "</td>";
+          textHtml += "<td>" + covidData.Thailand.active + "</td>";
+          textHtml += "<td>" + covidData.Thailand.critical + "</td>";
+          textHtml += "</tr>";
+
+          tableDisplay.innerHTML = textHtml;
+            
+          });
+        });
+      </script>
+</body>
+</html>

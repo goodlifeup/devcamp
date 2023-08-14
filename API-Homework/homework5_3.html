@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <style>
+            table tr td {
+                border: 1px transparent black;
+                text-align: center;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+        <div><h1 class="text-3xl font-semibold text-center">ReqRes Users!</h1></div>
+        <br />
+        <table class="mx-auto">
+            <tr id="rowDisplay"></tr>
+        </table>
+
+    <script>
+        let aUser = [];
+        let aLastName = [];
+        let count = 0;
+        
+        function getUser(callback) {
+                axios.get("https://reqres.in/api/users").then(function (response) {
+                    aUser = response.data.data
+                    callback();
+                 })
+        }
+      
+        function getUser2(callback) {
+        // gender -> age
+            axios.get("https://api.genderize.io?name=" + aUser[count].first_name).then(function (response) {
+                aUser[count].gender = response.data.gender
+                                        
+                    axios.get("https://api.agify.io/?name=" + aUser[count].first_name).then(function (response) {
+                        aUser[count].age = response.data.age 
+                        aLastName.push(aUser[count].last_name)
+
+                        count += 1
+                        callback();
+                    })
+
+            })
+        }
+
+        getUser(function () {
+            getUser2(function () {
+                getUser2(function () {
+                    getUser2(function () {
+                        getUser2(function () {
+                            getUser2(function () {
+                                getUser2(function () {
+
+                                    // console.log(count);
+                                    // console.log(aUser);
+                                    console.log(aLastName);
+                                    
+                                    let rowDisplay = document.getElementById('rowDisplay');
+                                    let textHtml = '';
+                                    for (let i = 0; i < aUser.length; i++) {
+                                        let img = "<p><img class='mx-[30px]' src='" + aUser[i].avatar + "'></p>";
+                                        textHtml += "<td>" + "<b>" + aUser[i].first_name + "</b>" + "<br />" + aUser[i].email + "<br />" + aUser[i].gender + "<br />" + aUser[i].age + "<br />" + img + "</td>";
+                                    }
+                                    rowDisplay.innerHTML = textHtml;
+
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
